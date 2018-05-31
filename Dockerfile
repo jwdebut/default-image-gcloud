@@ -18,4 +18,6 @@ RUN curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > 
       chmod 700 get_helm.sh && \
       ./get_helm.sh
 
+RUN helm init
+
 RUN helm plugin install https://github.com/futuresimple/helm-secrets
